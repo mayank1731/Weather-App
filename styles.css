@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    background: 
+        linear-gradient(to right, rgba(96, 179, 68, 0.7), rgba(102, 62, 123, 0.907)), 
+        url('26011-353916142_medium.mp4');
+    background-size: cover;
+    background-position: center;
+    color: rgba(26, 17, 49, 0.788);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+#backgroundVideo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+}
+
+.container {
+    font-family: Arial, sans-serif;
+    background: rgba(65, 26, 26, 0.1);
+    text-align: center;
+    max-width: 1000px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-image: url('photo-1534088568595-a066f410bcda.avif');
+  
+   
+    
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5b724c;
+    color: white;
+    cursor: pointer;
+}
+
+.weather-info, .forecast {
+    margin-top: 20px;
+}
+
+.forecast-item {
+    border: 1px solid #803535;
+    /* background: rgb(23, 249, 64); */
+    padding: 10px;
+    margin: 10px;
+    width: 150px;
+    text-align: center;
+    border-radius: 5px;
+    background-image: url('sky-8561169_1280.webp');
+
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#forecast {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  @keyframes rainbowGlow {
+    0% { border-color: red; box-shadow: 0 0 10px red; }
+    14% { border-color: orange; box-shadow: 0 0 10px orange; }
+    28% { border-color: yellow; box-shadow: 0 0 10px yellow; }
+    42% { border-color: green; box-shadow: 0 0 10px green; }
+    57% { border-color: blue; box-shadow: 0 0 10px blue; }
+    71% { border-color: indigo; box-shadow: 0 0 10px indigo; }
+    85% { border-color: violet; box-shadow: 0 0 10px violet; }
+    100% { border-color: red; box-shadow: 0 0 10px red; }
+}
+
+.container {
+    border: 105px solid;
+    border-radius: 5px;
+    border: 10px;
+    animation: rainbowGlow 1s infinite;
+   width: 50%;
+   height: auto;
+    position: relative;
+    margin-top: 200px; 
+    margin-top: -20px;
+   
+}
+@keyframes rainbowBackground {
+    0% { background-color: rgb(48, 225, 39); }
+    14% { background-color: rgb(198, 167, 109); }
+    28% { background-color: rgb(116, 116, 102); }
+    42% { background-color: rgb(66, 33, 99); }
+    57% { background-color: rgb(102, 102, 107); }
+    71% { background-color: rgb(200, 148, 238); }
+    85% { background-color: rgb(202, 217, 229); }
+    100% { background-color: rgb(38, 35, 105); }
+}
+
+.search-bar button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    animation: rainbowBackground 3s infinite;
+}
+@keyframes rainbowBackground {
+    0% { background-color: rgb(48, 225, 39); }
+    14% { background-color: rgb(198, 167, 109); }
+    28% { background-color: rgb(116, 116, 102); }
+    42% { background-color: rgb(66, 33, 99); }
+    57% { background-color: rgb(102, 102, 107); }
+    71% { background-color: rgb(200, 148, 238); }
+    85% { background-color: rgb(202, 217, 229); }
+    100% { background-color: rgb(38, 35, 105); }
+}
+.clock {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(58, 52, 80, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    animation: rainbowBackground 10s infinite;
+}
